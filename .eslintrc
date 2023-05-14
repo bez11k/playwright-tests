@@ -1,8 +1,8 @@
 {
     "parser": "@typescript-eslint/parser",
     "plugins":[
-        "@typescipt-eslint",
-        "@typescipt-eslint/eslint-plugin"
+        "@typescript-eslint",
+        "@typescript-eslint/eslint-plugin"
     ],
     "extends": [
         "plugin:playwright/playwright-test",
