@@ -14,3 +14,12 @@ test.describe('My Account', () => {
         await expect(page).toHaveURL(/.*downloads/);
     });
 })
+
+test.describe('Account Page', () => {
+    test.use({ storageState: 'notLoggedInState.json' })
+    test('Veify login and register is visible', async ({ page }) => {
+        await page.goto('/my-account');
+        await expect(page.locator('button.woocommerce-button:nth-child(4)')).toBeVisible();
+        await expect(page.locator('.woocommerce-Button')).toBeVisible();
+    });
+})
