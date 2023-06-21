@@ -1,0 +1,2 @@
+number of products with discounts = 3
+number of products with discounts = 0
